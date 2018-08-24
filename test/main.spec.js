@@ -22,7 +22,7 @@ describe('express', function () {
     nightmare = new Nightmare();
   });
 
-  it('should have the correct page title', () =>
+  xit('should have the correct page title', () =>
     nightmare
       .goto(url)
       .evaluate(() => document.querySelector('body').innerText)
